@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9f9f9;
+
+    /* Labels */
+    --label-primary: #000000;
+    --label-secondary: #3d3d3d;
+    --label-tertiary: #7a7a7a;
+    --label-disabled: #a3a3a3;
+
+    /* Grays */
+    --gray-1: #ebebeb;
+    --gray-4: #adadad;
+
+    /* Separators */
+    --separator-default: #ebebeb;
+    --separator-emphasized: #cccccc;
+
+    /* Border radius */
+    --radius: 5px;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+  }
+
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+}
